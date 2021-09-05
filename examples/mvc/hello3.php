@@ -1,12 +1,8 @@
 <?php
-require_once(dirname(dirname(dirname(__FILE__))) . '/lib/controllers.php');
-
-class HelloWorldController extends Controller
-{
-	public function render()
-	{
-		include('views/helloworld.tpl');
-	}
+require_once('../../lib/controllers.php');
+class HelloWorldController extends Controller {
+    public function render() {
+        include('views/helloworld.tpl');
+    }
 }
-
-controller_runlast();
+run('HelloWorldController');

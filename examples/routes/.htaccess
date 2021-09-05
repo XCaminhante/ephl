@@ -1,5 +1,4 @@
 # Redirect all to index.php
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteCond %{REQUEST_FILENAME} !-f

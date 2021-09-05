@@ -27,14 +27,13 @@
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-            	<h1>Examples (see the source code)</h1>
-            	
-				<ul>
-				<?php foreach (scandir(dirname(__FILE__) . '/examples') as $folder):
-					if ($folder[0] == '.' || is_file(dirname(__FILE__) . '/examples/' . $folder)) continue; ?>
-					<li><a href="examples/<?=htmlentities($folder)?>"><?=htmlentities($folder)?></a></li>
-				<?php endforeach; ?>
-				</ul>
+              <h1>Examples (see the source  code)</h1>
+        <ul>
+        <?php foreach (scandir(dirname(__FILE__) . '/examples') as $folder):
+          if ($folder[0] == '.' || is_file(dirname(__FILE__) . '/examples/' . $folder)) continue; ?>
+          <li><a href="examples/<?=htmlentities($folder)?>"><?=htmlentities($folder)?></a></li>
+        <?php endforeach; ?>
+        </ul>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
